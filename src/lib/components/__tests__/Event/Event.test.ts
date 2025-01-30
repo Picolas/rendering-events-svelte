@@ -5,7 +5,6 @@ import Event from '../../Event/Event.svelte';
 import type { Event as EventType } from '$lib/models/Event.js';
 import * as EventUtils from '$lib/utils/EventUtils.js';
 
-// Mock de la fonction utilitaire avec vi de Vitest
 vi.mock('$lib/utils/EventUtils.js', () => ({
   displayTime: vi.fn((start, duration) => `MockedTime(${start.toISOString()}, ${duration})`)
 }));
