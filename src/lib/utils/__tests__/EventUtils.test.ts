@@ -29,7 +29,10 @@ describe('EventUtils', () => {
           height: 0,
           width: 0,
           left: 0,
-          backgroundColor: ''
+          backgroundColor: {
+            color: '',
+            darkerColor: ''
+          }
         },
         {
           id: 2,
@@ -39,7 +42,10 @@ describe('EventUtils', () => {
           height: 0,
           width: 0,
           left: 0,
-          backgroundColor: ''
+          backgroundColor: {
+            color: '',
+            darkerColor: ''
+          }
         }
       ];
 

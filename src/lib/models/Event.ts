@@ -6,7 +6,10 @@ export interface Event {
   height: number;
   width: number;
   left: number;
-  backgroundColor: any;
+  backgroundColor: {
+    color: string;
+    darkerColor: string;
+  };
 }
 
 export function createEvent(id: number, startTime: string, duration: number): Event {
@@ -22,6 +25,9 @@ export function createEvent(id: number, startTime: string, duration: number): Ev
     height: 0,
     width: 0,
     left: 0,
-    backgroundColor: ''
+    backgroundColor: {
+      color: '',
+      darkerColor: ''
+    }
   };
 };

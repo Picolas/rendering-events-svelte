@@ -1,8 +1,8 @@
 <script lang="ts">
-	import type { EventProps } from '$lib/models/EventProps.js';
+	import type { Event } from '$lib/models/Event.js';
 	import { displayTime } from '$lib/utils/EventUtils.js';
 
-	let { id, start, duration, top, height, width, left, backgroundColor }: EventProps = $props();
+	let { id, start, duration, top, height, width, left, backgroundColor }: Event = $props();
 </script>
 
 <div
